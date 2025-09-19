@@ -18,7 +18,7 @@ This project implements a comprehensive machine learning pipeline for automatic 
 |-------|----------|-----------|--------|----------|
 | Random Forest | 86.66% | 0.96 | 0.87 | 0.91 |
 | LightGBM | 81.49% | 0.96 | 0.81 | 0.88 |
-| Advanced Ensemble | 89.89% | 0.96 | 0.90 | 0.93 |
+| Advanced Ensemble | 94.22% | 0.96 | 0.90 | 0.93 |
 
 <img width="578" height="418" alt="image" src="https://github.com/user-attachments/assets/f9e0f083-02e9-4641-ba4f-b8a31fc0876b" />
 <img width="649" height="500" alt="image" src="https://github.com/user-attachments/assets/4f89da0c-6a25-4935-86e4-0654e79db300" />
@@ -38,6 +38,7 @@ The system classifies beats into five superclasses according to AAMI recommendat
 | **VEB** (Ventricular) | V, E | Ventricular ectopic beats |
 | **F** (Fusion) | F | Fusion beats |
 | **Q** (Unknown) | /, f, Q | Unknown and unclassifiable beats |
+
 
 ##  Installation
 
@@ -81,6 +82,12 @@ The MIT-BIH Arrhythmia Database can be obtained from:
   ```bash
   rsync -Cavz physionet.org::mitdb /path/to/save/mitdb
   ```
+<img width="988" height="316" alt="image" src="https://github.com/user-attachments/assets/99b49b7c-ed2f-42a4-8899-0f28b9e8a0dc" />
+<img width="979" height="182" alt="image" src="https://github.com/user-attachments/assets/234f2846-af84-4ad6-96b7-81b84b7820a1" />
+<img width="862" height="161" alt="image" src="https://github.com/user-attachments/assets/6373f8f4-c010-4ffa-8bd7-569fce50c993" />
+
+
+
 
 ### 2. Run the Training Pipeline
 
@@ -104,6 +111,8 @@ X_test, y_test = classifier.extract_features_from_dataset(test_signals, test_ann
 model, feature_selector = classifier.train_lightgbm_model_improved(X_train, y_train, "improved_model")
 predictions = classifier.predict(X_test, "improved_model")
 ```
+<img width="339" height="262" alt="image" src="https://github.com/user-attachments/assets/6e7c9ed7-7f24-419a-a0ec-82c70d3a6d28" />
+
 
 ### 3. Launch the Web Application
 

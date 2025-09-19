@@ -20,6 +20,13 @@ This project implements a comprehensive machine learning pipeline for automatic 
 | LightGBM | 81.49% | 0.96 | 0.81 | 0.88 |
 | Advanced Ensemble | 89.89% | 0.96 | 0.90 | 0.93 |
 
+<img width="578" height="418" alt="image" src="https://github.com/user-attachments/assets/f9e0f083-02e9-4641-ba4f-b8a31fc0876b" />
+<img width="649" height="500" alt="image" src="https://github.com/user-attachments/assets/4f89da0c-6a25-4935-86e4-0654e79db300" />
+<img width="635" height="473" alt="image" src="https://github.com/user-attachments/assets/aa0a7398-22e3-4f1c-bba1-8c25216ddb05" />
+
+
+
+
 ## AAMI Classification Standards
 
 The system classifies beats into five superclasses according to AAMI recommendations:
